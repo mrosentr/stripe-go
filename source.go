@@ -152,8 +152,8 @@ const (
 
 // ReceiverFlow informs of the state of a verification authentication flow.
 type VerificationFlow struct {
-	AttemptsRemaining uint64             `json:"attempts_remaining"`
-	Status            RedirectFlowStatus `json:"status"`
+	AttemptsRemaining uint64                 `json:"attempts_remaining"`
+	Status            VerificationFlowStatus `json:"status"`
 }
 
 type Source struct {
